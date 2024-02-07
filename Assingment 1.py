@@ -12,7 +12,7 @@ def replace_numbers_with_text(input_string):
     for i in range(len(words)):
         if words[i].isdigit():
             # If the word is a number, replace it with the text representation
-            words[i] = number_dict[words[i][0]]
+            words[i] = numbers_allocation[words[i][0]]  # Corrected the dictionary reference
 
     # Join the words back into a string
     output_string = ' '.join(words)
